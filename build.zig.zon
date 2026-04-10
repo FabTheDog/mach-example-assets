@@ -1,6 +1,6 @@
 .{
     .name = .mach_example_assets,
-    .fingerprint = 0x37af2d41e6e699aa,
+    .fingerprint = 0x37af2d41e6e699aa, // Changing this has security and trust implications.
     .version = "0.0.0",
     .mach_zig_version = "2026.4.10-mach",
     .dependencies = .{},
