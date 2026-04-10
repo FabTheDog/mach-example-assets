@@ -1,7 +1,8 @@
 .{
-    .name = "mach-example-assets",
+    .name = .mach_example_assets,
+    .fingerprint = 0x37af2d41e6e699aa,
     .version = "0.0.0",
-    .mach_zig_version = "2024.11.0-mach",
+    .mach_zig_version = "2026.4.10-mach",
     .dependencies = .{},
     .paths = .{
         "assets",

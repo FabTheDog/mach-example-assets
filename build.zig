@@ -10,9 +10,11 @@ pub fn build(b: *std.Build) void {
 
     const main_tests = b.addTest(.{
         .name = "tests",
-        .root_source_file = b.path("main.zig"),
-        .target = target,
-        .optimize = optimize,
+        .root_module = b.createModule(.{
+            .root_source_file = b.path("main.zig"),
+            .target = target,
+            .optimize = optimize,
+        }),
     });
     const test_step = b.step("test", "Run tests");
     test_step.dependOn(&b.addRunArtifact(main_tests).step);
